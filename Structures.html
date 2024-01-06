@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Structures</title>
+
+        <style>
+            table, th, td{
+                border: 1px solid lightcoral;
+                border-collapse: collapse;
+            }            
+        </style>
+
+    </head>
+    <body>
+        
+        <!-- Tables -->
+
+        <!--
+            - Structural data visualization of the data.
+            - Contains Rows and Columns.
+            - Headers can be created for the tables.
+            - The cross- section of the rows and columns is called a cell.
+            - A cell which will contain the data.
+        -->
+
+        <p> Example of a Table </p>
+
+        <table style="width: 100%;">     <!-- Table creation in HTML (start)-->
+
+            <thead>     <!-- Table's Heading -->
+
+                <tr>    <!-- Table Row -->
+
+                    <th>    <!-- Table heading data -->
+                        Name
+                    </th>
+
+                    <th>    <!-- Table heading data -->
+                        Age
+                    </th>
+
+                    <th>    <!-- Table heading data -->
+                        Marks
+                    </th>
+
+                </tr>
+                
+            </thead>
+
+            <tbody>     <!-- Table's Body -->
+
+                <tr>    <!-- Table Row -->
+                    
+                    <td>    <!-- Table Data -->
+                        Joe
+                    </td>
+
+                    <td>    <!-- Table Data -->
+                        12
+                    </td>
+
+                    <td>    <!-- Table Data -->
+                        85
+                    </td>
+
+                </tr>
+
+                <tr>    <!-- Table Row -->
+                    
+                    <td>    <!-- Table Data -->
+                        Ronnie
+                    </td>
+
+                    <td>    <!-- Table Data -->
+                        15
+                    </td>
+
+                    <td>    <!-- Table Data -->
+                        92
+                    </td>
+
+                </tr>
+
+                <tr>    <!-- Table Row -->
+                    
+                    <td>    <!-- Table Data -->
+                        Doe
+                    </td>
+
+                    <td>    <!-- Table Data -->
+                        21
+                    </td>
+
+                    <td>    <!-- Table Data -->
+                        79
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+            <tfoot>     <!-- Table Footer -->
+
+                <tr>    <!-- Table Row -->
+                    
+                    <td>    <!-- Table Data -->
+                        Hina
+                    </td>
+
+                    <td>    <!-- Table Data -->
+                        16
+                    </td>
+
+                    <td>    <!-- Table Data -->
+                        72
+                    </td>
+
+                </tr>
+
+            </tfoot>
+
+        </table>    <!-- Table creation in HTML (end)-->
+
+
+        <!--
+            Merge of Cells:
+                - ROW Merge
+                    > Rowsspan
+
+                - Column Merge
+                    > colspan
+        -->
+
+        <p>Merge Tables Example</p>
+
+        <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>01</th>
+                    <th>02</th>
+                    <th>03</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rowspan -->
+                <tr>
+                    <td rowspan="3">04</td>
+                    <td>05</td>
+                    <td>06</td>
+                </tr>
+                <tr>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                </tr>
+                <!-- Colspan -->
+                <tr>
+                    <td colspan="3">10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <!-- LISTS -->
+
+        <!--
+            There are 3 types of lists:
+                - Ordered Lists         <ol>
+                - Unordered Lists       <ul>
+                - Description Lists     <dl>
+        -->
+
+        <!--
+            ORDERED LISTS
+                - List shown with specific numbers or alphabets as pointers.
+        -->
+
+        <ol type="a">    <!-- ordered List Tag -->
+            <li>        <!-- List's Element -->
+                HTML
+            </li>
+            <li>
+                CSS
+            </li>
+            <li>
+                Js
+            </li>
+        </ol>
+
+        <!--
+            UNORDERED LISTS
+                - List shown with bullentiens and symbols.
+        -->
+
+        <ul style="list-style-type:square;">    <!-- unordered List Tag -->
+            <li>        <!-- List's Element -->
+                HTML
+            </li>
+            <li>
+                CSS
+            </li>
+            <li>
+                Js
+            </li>
+        </ul>
+
+        <!--
+            DESCRIPTION LISTS
+                - Description of the elements present in the list.
+        -->
+
+        <dl>    <!-- Description List tag -->
+            <dt>    <!-- Description' Term/ name-->
+                HTML
+            </dt>
+                <dd>    <!-- Decription Data for the above term/name -->
+                    Hyper Text markup Language
+                </dd>
+
+            <dt>    <!-- Description' Term/ name-->
+                CSS
+            </dt>
+                <dd>    <!-- Decription Data for the above term/name -->
+                    Cascading Style Sheet
+                </dd>
+
+            <dt>    <!-- Description' Term/ name-->
+                JS    
+            </dt>
+                <dd>    <!-- Decription Data for the above term/name -->
+                    Java Script
+                </dd>
+        </dl>
+
+    </body>
+</html>

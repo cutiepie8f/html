@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Form</title>
+    </head>
+    <body>
+        <!-- HTML Form -->
+        <!--
+            - A form is added to collect multiple inputs from the user.
+            - A Form will be having different kinds of input elements in it.
+            - Attributes in form - "action" helps in defining the post submission action.
+        -->
+
+        <form action="./Structures.html">
+
+            <label for="fname">First Name:</label>
+                <!--
+                    - A label tag is used to label a specific content of an input element.
+                    - Attributes:
+                        > for : identifying the labeled link input element.
+                                it connects to only a id of an element.
+                -->
+
+            <input type="text" id="fname" name="first_name" placeholder="John" value="April">
+                <!--
+                    - An ainput tag is used for inserting values/ data.
+                    - It is a self closing tag.
+                    - Attributes:
+                        > type  : define the type of data can be inserted in this element.
+                        > id    : giving a unique name to the element in the webpage.
+                        > name  : giving a name to the element.
+                        > value : helps in defining whats in the content.
+                        > placeholder   : gives an information in the input element as an example.
+                -->
+
+            <br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="Doe" readonly>
+
+            <br>
+
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" placeholder="Password" required>
+                <!--
+                    type - Password
+                            Hides the content
+
+                    required
+                         - only key attribute in input element (no values)
+                         - makes the input element mandatory to fill and submit.
+
+                    readonly
+                         - only key attribute in input element (no values)
+                         - makes the input element to be read only (user will not be able to enter any values in it)
+                -->
+
+             <br>
+
+            <label for="mail">E-Mail:</label>
+            <input type="email" id="mail" placeholder="john@doe.com">
+                <!--
+                    type - email
+                            check for an email format value
+                -->
+
+            <br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Age" min="18" max="75">
+                <!--
+                    type - number
+                            - only integer values it accepts
+
+                    max & min
+                            - accepts integer values only in input -> type-number.
+                            - min : minimum number to be taken (lower limit)
+                            - max : maximum number to be taken (higher limit)
+
+                -->
+
+            <br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+
+            <br>
+
+            <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="others" name="gender" value="Others">
+                <label for="others">Others</label>
+
+                <!--
+                    type - radio
+                            - Selecting an option from the same group.
+                            - "value": is the data taht would be transmitted to the backend from the selected option.
+                -->
+
+            <br>
+
+            <label>Languages:</label>
+                <input type="checkbox" id="html" name="language" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" name="language" value="CSS">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="js" name="language" value="JS">
+                <label for="js">JS</label>
+
+                <!--
+                    type - checkbox
+                            - Selecting one or more option from the same group.
+                -->
+
+            <br>
+
+            <label for="count">Country:</label>
+            <select id="count">
+                <option selected disabled>Select a Country</option> <!-- Placeholder in select -->
+                <option>India</option>
+                <option>Nigeria</option>
+                <option>Sweden</option>
+                <option>Gambia</option>
+            </select>
+
+            <!--
+                - select tag is used to select from the given options.
+                - Similar to a drop down
+                - Option tags can be used only inside the select tag.
+                - Attributes:
+                    > selected  :   making an option pre selected.
+                    > disabled  :   making an option disable to be selected.
+            -->
+
+            <br>
+
+            <input type="submit">   <!-- Submit Button -->
+            <input type="button" value="Go">    <!-- Normal Button -->
+            <input type="reset">    <!-- Reset Button -->
+
+            <button>Edureka!</button>   <!-- Button tag -->
+
+        </form>
+    </body>
+</html>
